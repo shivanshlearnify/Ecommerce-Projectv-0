@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Homepage from "./pages/homepage/Homepage.jsx";
 import Nopage from "./pages/nopage/Nopage.jsx";
+import ProductInfo from "./pages/productInfo/ProductInfo.jsx";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
@@ -16,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Homepage />,
+      },
+      {
+        path: "/productInfo",
+        element: <ProductInfo />,
       },
       {
         path: "/*",

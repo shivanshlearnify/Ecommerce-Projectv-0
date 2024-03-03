@@ -1,11 +1,14 @@
-import { Button } from "@material-tailwind/react";
 import React from "react";
 import { Outlet } from "react-router-dom";
+import ScrollTop from "./components/scrollTop/ScrollTop";
 
 const App = () => {
-  return <div>
-    <Outlet/>
-  </div>;
+  return (
+    <div>
+      <ScrollTop/>
+      <Outlet />
+    </div>
+  );
 };
 
 export default App;
